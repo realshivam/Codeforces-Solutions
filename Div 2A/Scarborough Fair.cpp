@@ -5,32 +5,29 @@ int main()
 {
     int n;
     cin>>n;
-    int m;
-    cin>>m;
-    string s;
-    cin>>s;
-
-    while(m--)
+    if(n%4==0)
     {
-        int l;
-        cin>>l;
-        int r;
-        cin>>r;
-        char c1;
-        cin>>c1;
-        char c2;
-        cin>>c2;
-
-        for(int i=l-1;i<=r-1;i++)
-        {
-            if(s[i]==c1)
-            {
-                s[i]=c2;
-            }
-        }
+        
+        cout<<1<<" A";
+        
     }
-
-    cout<<s<<endl;
-
+    if(n%4==1)
+    {
+        
+        cout<<0<<" A";
+        
+    }
+    if(n%4==2)
+    {
+        
+        cout<<1<<" B";
+        
+    }
+    if(n%4==3)
+    {
+        
+        cout<<2<<" A";
+        
+    }
     return 0;
 }
